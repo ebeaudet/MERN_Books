@@ -63,7 +63,7 @@ class Search extends Component {
               synopsis={book.volumeInfo.description ? 
                 book.volumeInfo.description : "No Description Available"}
               link={book.selfLink}
-              thumbnail={book.volumeInfo.imageLinks ? 
+              thumbnail={book.volumeInfo.imageLinks.thumbnail ? 
                 book.volumeInfo.imageLinks.thumbnail : "https://loremflickr.com/320/240/book"}
               />
             )
