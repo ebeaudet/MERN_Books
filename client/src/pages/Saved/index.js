@@ -13,7 +13,7 @@ class Saved extends Component {
   componentDidMount(){
     this.getBooks();
   }
-
+debugger
   getBooks = () => {
     axios.get("/api/books")
     .then(res => {
@@ -43,8 +43,8 @@ class Saved extends Component {
             console.log(book)
             return (
               <BookListItem
-              key={book.id}
-              _id={book._id}
+              key={book._id}
+              // _id={book._id}
               authors={book.authors}
               title={book.title}
               synopsis={book.synopsis}
